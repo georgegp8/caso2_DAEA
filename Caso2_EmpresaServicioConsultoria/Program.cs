@@ -1,4 +1,6 @@
 using Caso2_EmpresaServicioConsultoria.Models;
+using Caso2_EmpresaServicioConsultoria.Repository;
+using Caso2_EmpresaServicioConsultoria.Repository.Implements;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,7 +23,7 @@ builder.Services.AddDbContext<ConsultoriaDBContext>(options =>
 
 
 // Registro de Repositorios (Inyección de Dependencias)
-
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 
 
