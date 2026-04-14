@@ -16,7 +16,7 @@ builder.Services.AddSwaggerGen();
 
 
 // Conexión a PostgreSQL (XDbContext)
-builder.Services.AddDbContext<ConsultoriaDB>(options =>
+builder.Services.AddDbContext<ConsultoriaDBContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
