@@ -1,0 +1,84 @@
+﻿# =============================
+# C# / .NET
+# =============================
+
+## Build output
+bin/
+obj/
+out/
+
+## NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+!**/packages/build/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## .NET Core
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Publish
+publish/
+**/publish/
+
+## Test results
+TestResults/
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+
+## ASP.NET
+wwwroot/lib/
+
+# =============================
+# JetBrains Rider
+# =============================
+
+.idea/
+*.sln.iml
+
+## Rider specific
+.idea.*/
+
+# =============================
+# Visual Studio (por si acaso)
+# =============================
+
+.vs/
+*.rsuser
+*.user
+*.userosscache
+
+# =============================
+# Archivos de sistema
+# =============================
+
+## Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+## macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+## Linux
+*~
+
+# =============================
+# Logs y temporales
+# =============================
+
+*.log
+*.tmp
+*.temp
+*.cache
